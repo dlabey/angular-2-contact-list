@@ -1,0 +1,51 @@
+[{
+    "first_name": "Darren",
+    "last_name": "Labey",
+    "email": "dlabey@fastmail.fm",
+    "street_number": "5112",
+    "street": "Fino Dr",
+    "city": "San Diego",
+    "state_code": "CA",
+    "state": "California",
+    "zip" "92124"
+}, {
+    "first_name": "Darren",
+    "last_name": "Labey",
+    "email": "dlabey@fastmail.fm",
+    "street_number": "5476",
+    "street": "Kiowa Dr",
+    "city": "La Mesa",
+    "state_code": "CA",
+    "state": "California",
+    "zip_code": "91942"
+}, {
+    "first_name": "Darren",
+    "last_name": "Labey",
+    "email": "dlabey@fastmail.fm",
+    "street_number": "2244",
+    "street": "Feton Pkwy",
+    "city": "San Diego",
+    "state_code": "CA",
+    "state": "California",
+    "zip_code": "92108"
+}, {
+    "first_name": "Darren",
+    "last_name": "Labey",
+    "email": "dlabey@fastmail.fm",
+    "street_number": "4430",
+    "street": "Jewell",
+    "city": "San Diego",
+    "state_code": "CA",
+    "state": "California",
+    "zip_code": "92109"
+}, {
+    "first_name": "Darren",
+    "last_name": "Labey",
+    "email": "dlabey@fastmail.fm",
+    "street_number": "790",
+    "street": "Camino De La Reina",
+    "city": "San Diego",
+    "state_code": "CA",
+    "state": "California",
+    "zip_code": "92108"
+}]
