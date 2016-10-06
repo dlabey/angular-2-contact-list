@@ -9,17 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var http_1 = require('@angular/http');
+var ListComponent = (function () {
+    function ListComponent(http) {
+        var _this = this;
+        this.http = http;
+        http.get('data/contacts.json')
+            .map(function (res) { return res.json(); })
+            .subscribe(function (data) { return _this.contacts = data; }, function (err) { return console.log(err); }, function () { return console.log(_this.contacts); });
     }
-    AppComponent = __decorate([
+    ListComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: '<h1>My First Angular App</h1>'
+            moduleId: module.id,
+            selector: 'list',
+            templateUrl: './list.html'
         }), 
-        __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+        __metadata('design:paramtypes', [http_1.Http])
+    ], ListComponent);
+    return ListComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.ListComponent = ListComponent;
+//# sourceMappingURL=list.js.map

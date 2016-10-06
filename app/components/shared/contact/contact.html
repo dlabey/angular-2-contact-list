@@ -1,0 +1,14 @@
+<div (click)="isCollapsed = !isCollapsed">
+  <h5 class="list-group-item-heading">{{contact.first_name}} {{contact.last_name}} - <em>{{contact.street_number}} {{contact.street}}</em></h5>
+  <div class="row" [ngbCollapse]="isCollapsed">
+    <div class="col-md-2">
+      <img src="https://www.gravatar.com/avatar/{{gravatarHref()}}">
+    </div>
+    <div class="col-md-10">
+      {{contact.street_number}} {{contact.street}}<br>
+      {{contact.city}}, {{contact.state_code}} {{contact.zip_code}}<br>
+      <a href="http://maps.google.com/?q={{contact.street_number}} {{contact.street}}, {{contact.state}}, {{contact.zip_code}}" target="_blank">Google Maps</a><br>
+      <a href="mailto:{{contact.email}}">{{contact.email}}</a> | <a href="tel:{{contact.phone_number}}">{{contact.phone_number}}</a>
+    </div>
+  </div>
+</div>

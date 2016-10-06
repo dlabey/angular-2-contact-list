@@ -9,17 +9,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var md5_1 = require('ts-md5/dist/md5');
+var Contact = (function () {
+    function Contact() {
+    }
+    return Contact;
+}());
 var ContactComponent = (function () {
     function ContactComponent() {
+        this.isCollapsed = true;
     }
+    ContactComponent.prototype.gravatarHref = function () {
+        return md5_1.Md5.hashStr(this.contact.email);
+    };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Contact)
+    ], ContactComponent.prototype, "contact", void 0);
     ContactComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'contact',
-            template: '<div>Contact</div>'
+            templateUrl: './contact.html',
+            styleUrls: ['./contact.css']
         }), 
         __metadata('design:paramtypes', [])
     ], ContactComponent);
     return ContactComponent;
 }());
 exports.ContactComponent = ContactComponent;
-//# sourceMappingURL=contact.component.js.map
+//# sourceMappingURL=contact.js.map
